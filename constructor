@@ -1,0 +1,27 @@
+
+public class stu_Constructor {
+int id ;
+String name;
+public stu_Constructor (int i,String n) {
+	id=i;
+	name=n;
+}
+void display() {
+	System.out.println(id+" "+name);
+}
+
+	public static void main(String[] args) {
+		stu_Constructor  sc=new stu_Constructor (101,"ramana");
+		stu_Constructor  sc1=new stu_Constructor (102,"sakthi");
+		stu_Constructor  sc2=new stu_Constructor (103,"ram");
+//		stu_Constructor  sc3=new stu_Constructor ();
+//		stu_Constructor  sc4=new stu_Constructor ();
+		sc.display();
+		sc1.display();
+		sc2.display();
+
+		
+
+	}
+
+}
