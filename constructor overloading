@@ -1,0 +1,29 @@
+
+public class constructorOverloading {
+int id;
+String name;
+int age;
+	public constructorOverloading(int i,String n) {
+		id=i;
+		name=n;
+		
+	}
+	public constructorOverloading(int a,String n,int i) {
+		id=i;
+		name=n;
+		age=a;
+		
+	}
+	void display() {
+		System.out.println(id+" "+name+" "+age);
+	}
+	public static void main(String[] args) {
+		constructorOverloading con1=new constructorOverloading(123,"ram",20);
+		constructorOverloading con2=new constructorOverloading(124,"ramana",23);
+		constructorOverloading con3=new constructorOverloading(125,"sakthi",20);
+		 con1.display();
+		con2. display();
+		con3. display();
+	}
+
+}
