@@ -1,0 +1,22 @@
+
+public class con2 {
+ int val1;
+ int val2;
+ con2(){
+	 val1=10;
+	 val2=20;
+	 System.out.println("inside con");
+ }
+ public  void display() {
+	 System.out.println("value1====>"+val1);
+	 System.out.println("value2====>"+val2);
+ }
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		con2 con=new con2();
+		con.display();
+
+	}
+
+}
