@@ -1,0 +1,33 @@
+
+public class singletonDesignPettern {
+	
+	//diclare private data failed
+	private String name;
+	private int age;
+	private String department;
+	//used this for accessing current object
+
+	private singletonDesignPettern(String name,int age,String department ) {
+		//this will refer current object of the data failed
+		this.name=name;
+		this.age=age;
+		this.department=department;
+	
+	}
+	//factory method to create employee objects
+	public static singletonDesignPettern  createemp(String name,int age,String department) {
+		return new singletonDesignPettern(name,age,department);
+	}
+	//getting employee objects using the factory method
+	
+
+	public static void main(String[] args) {
+		singletonDesignPettern emp1=singletonDesignPettern.createemp("john",30,"hr");
+		singletonDesignPettern emp2=singletonDesignPettern.createemp("john",30,"hr");
+				
+		System.out.println("emp1 name:"+emp1.name+" "+"age:"+emp1.age+" emp deportment:"+emp1.department);
+		System.out.println("emp2 name:"+emp2.name+" " +"age:"+emp2.age+" emp deportment:"+emp2.department);
+
+	}
+
+}
