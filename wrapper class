@@ -1,0 +1,60 @@
+
+public class wrapperclass {
+
+	
+
+	public static void main(String[] args) {
+		byte b=10;
+		short s=20;
+		int i=30;
+		long l=54;
+		float f=2.345F;
+		double d=60.0D;
+		char c1='a';
+		boolean b2=true;
+		//autoboxing:converting primitive data into object
+		Byte byteobj=b;
+		Short shortobj=s;
+		Integer intobj=i;
+		Float floatobj=f;
+		Double doubleobj=d;
+		Character charobj=c1;
+		Boolean booleanobj=b2;
+		//print
+		System.out.println("----------printing object--------");
+		System.out.println("byte is:"+byteobj);
+		System.out.println("short is:"+shortobj);
+		System.out.println("int is:"+intobj);
+		System.out.println("float is:"+floatobj);
+		System.out.println("double is:"+doubleobj);
+		System.out.println("char is:"+charobj);
+		System.out.println("boolean is:"+booleanobj);
+	//unboxing:convert objects into primitive
+		byte bytevalue=byteobj;
+		short shortvalue=shortobj;
+		int intvalue=intobj;
+		float floatvalue=floatobj;
+		double doublevalue=doubleobj;
+		char charvalue=charobj;
+		boolean booleanvalue=booleanobj;
+		//printiing primitives
+		System.out.println("----------printing primitive value--------");
+		System.out.println("byte is:"+bytevalue);
+		System.out.println("short is:"+shortvalue);
+		System.out.println("int is:"+intvalue);
+		System.out.println("float is:"+floatvalue);
+		System.out.println("double is:"+doublevalue);
+		System.out.println("char is:"+charvalue);
+		System.out.println("boolean is:"+booleanvalue);
+		
+		
+		
+		
+		
+		
+		
+
+
+	}
+
+}
