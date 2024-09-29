@@ -1,0 +1,69 @@
+package Oops_practices;
+class Animal{
+	 String name;
+	int age;
+	public Animal(String name,int age) {
+		this.name=name;
+		this.age=age;
+		
+	}
+	
+	
+	void makesound() {
+		
+		
+	}}
+	
+	class dog extends Animal{
+		public dog(String name, int age, String string, int i) {
+			super(name, age);
+			// TODO Auto-generated constructor stub
+		}
+		String breed;
+		
+		@Override
+		void makesound() {
+			System.out.println("dogs sound bow..");
+			
+		}
+		void fetch() {
+			System.out.println("dog is fetching");
+		}
+	}
+	class cat extends Animal{
+		public cat(String name, int age) {
+			super(name, age);
+			// TODO Auto-generated constructor stub
+		}
+		String color;
+		@Override
+		void makesound() {
+			// TODO Auto-generated method stub
+			System.out.println("cat sound is meow");
+		}
+		void climb() {
+			System.out.println("cat was climbed");
+		}
+	}
+
+
+public class Inherit2 {
+	
+
+	public static void main(String[] args) {
+		dog d1=new dog("jimmy",2,"bamorian",4);
+		d1.makesound();
+		d1.fetch();
+	    System.out.println("name of the dog is:"+d1.name);
+	    System.out.println("name of the dog is:"+d1.age);
+	    System.out.println();
+		cat c1=new cat("blaky", 4);
+		c1.makesound();
+		System.out.println("name of the dog is:"+c1.name);
+		System.out.println("name of the dog is:"+c1.age);
+		
+		
+		
+	}
+
+}
