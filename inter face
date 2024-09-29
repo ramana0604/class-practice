@@ -1,0 +1,35 @@
+package pack2;
+interface one1{//interface declaration
+	public void printone();
+}
+interface two1{
+	public void printtwo();//can't create body for interface method
+}
+interface three1 extends one1,two1{
+	public void printthree();
+}
+class child implements three1{//class overwrite the interface
+	public void printone() {
+		System.out.println("print one from class one");
+	}
+	public void printtwo() {
+		System.out.println("print one from class two");
+	}
+	public void printthree() {
+		System.out.println("print one from class three");
+	}
+	
+}
+public class interfaceInJava {
+	
+
+	public static void main(String[] args) {
+		child i=new child();
+		i.printone();
+		i.printtwo();
+		i.printthree();
+		
+
+	}
+
+}
