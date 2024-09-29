@@ -1,0 +1,35 @@
+package pack2;
+class numone{
+	public void printone() {
+		System.out.println("print one1");
+	}
+}
+//intemediatory class 
+//child class two inherit class one
+class numtwo extends numone{
+	public void printtwo() {
+		System.out.println("print two2");
+	}
+}
+//child class three inherit from class two
+//derived class
+class numthree extends numtwo
+{
+	public void printthree() {
+		System.out.println("print three3");
+	}
+}
+public class multilevelinhert {
+
+	public static void main(String[] args) {
+		numthree t=new numthree();
+		t.printone();
+		t.printtwo();
+		t.printthree();
+		
+		
+		
+
+	}
+
+}
