@@ -1,0 +1,45 @@
+
+
+
+package pack2;
+abstract class Bank{
+	abstract int Intersest();
+		
+}
+class sbi extends  Bank{
+
+	@Override
+	int Intersest() {
+		
+		return 07;
+	}
+	
+}
+class Pnb extends Bank{
+
+	@Override
+	int Intersest() {
+		
+		return 8;
+	}
+	
+}
+
+
+
+
+
+public class Abstract {
+
+	public static void main(String[] args) {
+		Bank b;
+		b=new sbi();
+		
+		System.out.println("interset of sbi is"+b.Intersest());
+		b=new Pnb();
+		System.out.println("interset of pnb is"+b.Intersest());
+		
+
+	}
+
+}
