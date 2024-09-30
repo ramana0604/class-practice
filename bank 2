@@ -1,0 +1,42 @@
+package pack2;
+public  class AbstractDemo{
+	private String name;
+	private String address;
+	private int num;
+	public AbstractDemo (String name,String address,int num) {
+		System.out.println("constructing an employee");
+		this .name=name;
+		this.address=address;
+		this.num=num;
+		
+		
+	}public double compute() {
+		System.out.println("inside employee computer");
+		return 0.0;
+		
+	}
+	public void mailCheck()
+	{
+		System.out.println("mailing a check to"+this.name+" "+this.address);
+	}
+	public String toString() {
+		return name+" "+address+" "+num;
+	}
+	public String getname() {
+		return name;
+		
+	}
+	public String address() {
+		return address;
+		
+	}
+	public void seraddress(String newsddress) {
+		address=newsddress;
+	}
+	public int getnum() {
+		return num;
+	
+	}
+}
+//public class AbstractDemo {
+
