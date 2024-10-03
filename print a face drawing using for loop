@@ -1,0 +1,74 @@
+package pack2;
+
+public class Jag {
+
+	public static void main(String[] args) {
+		
+		       
+		        int numDashes = 9;
+
+		        
+		        for (int i = 0; i < 1; i++) {
+		            
+		            System.out.print("+");
+		            
+		           
+		            
+
+		            // Inner loop for printing dashes
+		            for (int j = 0; j < numDashes; j++) {
+		                System.out.print("\"");
+		            }
+
+		            // Print the ending asterisk
+		            System.out.println("+");
+		           
+		        }
+
+		        // Move to the next line after printing the pattern
+		        System.out.println("{|  o o  |}");
+		        for(int i=0;i<1;i++) {
+		        	System.out.print(" |   ");
+		        	
+		        }
+		        for (int j=0;j<1;j++) {
+		        	System.out.print("^");
+		        }
+		        System.out.println("   |");
+		    
+
+for(int i=0;i<1;i++) {
+	System.out.print(" |  ");
+	
+}
+for (int j=0;j<1;j++) {
+	System.out.print("---");
+}
+System.out.println("  |");
+for(int i=0;i<1;i++) {
+	System.out.print(" +");
+	
+}
+for (int j=0;j<numDashes-2;j++) {
+	System.out.print("-");
+}
+System.out.println("+");
+}
+}
+
+//output is
+
+
+
+
++"""""""""+	
+{|  o o  |}
+ |   ^   |
+ |  ---  |
+ +-------+
+		
+		
+
+	
+
+	
