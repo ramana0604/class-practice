@@ -1,0 +1,58 @@
+//first enter the number of cities
+//example:4
+//next enter name of cities
+//example:city1:a
+//city2:b
+//city3:c
+//city4:4
+//next to find sum of distance in given city
+package newpack;
+
+		import java.util.Scanner;
+
+		public class IQ1 {
+			
+		    public static void main(String[] args) {
+		    	int count=0;
+		    	double total=0d;
+		        Scanner scanner = new Scanner(System.in);
+
+		        // Step 1: Get the number of cities
+		        System.out.print("Enter the number of cities: ");
+		        int numberOfCities = scanner.nextInt();
+		        scanner.nextLine(); // Consume newline
+
+		        // Step 2: Get the names of the cities
+		        String[] cities = new String[numberOfCities];
+		        for (int i = 0; i < numberOfCities; i++) {
+		            System.out.print("Enter the name of city " + (i+1) + ": ");
+		            cities[i] = scanner.nextLine();
+		            count++;
+		        }
+		       for(int j=1;j<=count;j++){
+		        
+
+		        // Step 3: Get the distances between two cities
+		        System.out.print("Enter the distance  "+j);
+		        double distance1 = scanner.nextDouble();
+		       
+		        
+
+		        // Calculate the sum of the distances
+		         total=+distance1;
+		       }
+		       
+		        // Print the results
+		        System.out.println("Number of cities: " + numberOfCities);
+		        System.out.println("Names of cities:");
+		        for (String city : cities) {
+		            System.out.println(city);
+		        }
+		        System.out.println("Sum of the distances between the cities: " + total);
+		    }
+		
+
+
+	}
+
+
