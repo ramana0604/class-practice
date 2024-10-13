@@ -1,0 +1,62 @@
+package newpack;
+import java.util.*;
+public class StringHandle {
+
+	public static void main(String[] args) {
+		String type="hello";
+		System.out.println("my string is "+type);
+		int lenght1=type.length();
+		
+		System.out.println("my string lenght is"+lenght1);
+		String str1="hai";
+		String str2="hello";
+		//
+		System.out.println("two string "+str1+str2);
+		String joinedString=str1.concat(str2);
+		System.out.println("concated String is"+joinedString);
+		//check the string is equal
+		boolean result=str1.equals(str2);
+		System.out.println("string are not equal");
+		//creating a string using key word
+		//compare the string using copare string
+		String str3=new String(" hai i am String new ");
+		int result1=str1.compareTo(str3);
+		System.out.println(result1);
+		//indexof returns the occurence of the string
+		String str5="hai i am new string";
+		int result3=str5.indexOf("i");
+		System.out.println(result3);
+		String text1="java is programing language";
+		
+		//split
+		String [] resultteny=text1.split("");
+//		System.out.println("result=");
+		for (String strany:resultteny) {
+			System.out.print(strany+"_");
+		}
+		//split--1.regex(div the string)
+		//2.limit --no of resulting substrings
+		String vowels="a::b::c::d:e";
+		String[] resultvowels=vowels.split("::");
+		System.out.println();
+		System.out.println("result"+Arrays.toString(resultvowels));
+		String str34="hai bat and ball";
+		System.out.println(str34.replace('b','h'));
+		String SubStr="welcome to java world";
+		System.out.println("-----------cut str1-----------");
+		System.out.println(SubStr.substring(4,6));
+		//4th charecter to last charecter
+		String SubStr1="welcome to java world";
+		System.out.println("----------cut the string--------");
+		System.out.println(SubStr.substring(4));
+		
+		
+			
+		}
+		
+		
+		
+
+	}
+
+
